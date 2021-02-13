@@ -1,0 +1,29 @@
+.today-cell-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.day-label {
+  font-size: 25px;
+  color: white;
+}
+
+.temp-label {
+  font-size: 75px;
+  color: white;
+}
+
+.icon {
+  width: 125px;
+  height: 125px;
+}
