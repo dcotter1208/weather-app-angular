@@ -6,7 +6,7 @@ import { formatDate } from '@angular/common';
   templateUrl: './date-time.component.html',
   styleUrls: ['./date-time.component.css'],
 })
-export class DateTimeComponent implements OnInit {
+export class DateTimeComponent {
   date = '';
   time = '';
 
@@ -14,9 +14,5 @@ export class DateTimeComponent implements OnInit {
     const today = new Date();
     this.date = formatDate(today, 'EEEE, MMMM d, y', 'en', 'EST');
     this.time = formatDate(today, 'shortTime', 'en');
-  }
-
-  ngOnInit(): void {
-    console.log('oninit');
   }
 }
