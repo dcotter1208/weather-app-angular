@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="inner-container">
+    <div class="today-cell">
+    <app-today-weather-cell></app-today-weather-cell>
+  </div>
+  <div class="forecast-cell-container">
+    <app-weather-cell *ngFor="let forecast of days"></app-weather-cell>
+  </div>
+  </div>
+</div>
