@@ -34,6 +34,7 @@
   .inner-container {
     display: flex;
     height: 100%;
+    overflow: hidden;
   }
   .today-cell {
     width: 350px;
