@@ -7,5 +7,5 @@ import { DailyForecast } from 'src/app/classes/daily-forecast';
   styleUrls: ['./weather-cell.component.css'],
 })
 export class WeatherCellComponent {
-  @Input() data: DailyForecast = new DailyForecast(0, '', '');
+  @Input() data: DailyForecast = new DailyForecast(0, '', '', '');
 }
