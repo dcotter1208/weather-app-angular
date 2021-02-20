@@ -1,5 +1,10 @@
-import { stringify } from '@angular/compiler/src/util';
+import { DailyForecast } from './daily-forecast';
 
 export class Weather {
-  constructor(public location: string, temperature: string, icon: string) {}
+  constructor(
+    public temperature: string,
+    public icon: string,
+    public description: string,
+    public forecast: DailyForecast[]
+  ) {}
 }

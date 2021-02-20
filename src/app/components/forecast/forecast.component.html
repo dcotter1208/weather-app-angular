@@ -3,8 +3,8 @@
     <div class="today-cell">
     <app-today-weather-cell></app-today-weather-cell>
   </div>
-  <div class="forecast-cell-container">
-    <app-weather-cell *ngFor="let forecast of days"></app-weather-cell>
+  <div class="forecast-cell-container" *ngFor="let forecast of forecast">
+    <app-weather-cell [data]=forecast></app-weather-cell>
   </div>
   </div>
 </div>

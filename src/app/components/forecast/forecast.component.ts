@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DailyForecast } from 'src/app/classes/daily-forecast';
 import { Weather } from 'src/app/classes/weather';
 import { WeatherService } from 'src/app/service/data/weather.service';
 
@@ -8,7 +9,7 @@ import { WeatherService } from 'src/app/service/data/weather.service';
   styleUrls: ['./forecast.component.css'],
 })
 export class ForecastComponent implements OnInit {
-  days = [1, 2, 3, 4, 5, 6, 7];
+  forecast: DailyForecast[] = [];
 
   constructor(private service: WeatherService) {}
 
@@ -23,6 +24,6 @@ export class ForecastComponent implements OnInit {
   }
 
   handleSuccess(response: Weather): void {
-    console.log(response.location);
+    this.forecast = response.forecast;
   }
 }

@@ -11,7 +11,7 @@ export class WeatherService {
 
   executeWeatherService(): Observable<Weather> {
     return this.http.get<Weather>(
-      'http://localhost:8080/weather-forecast/42.3314/-83.0458'
+      'http://localhost:8080/weather-forecast?lat=42.331&lon=-83.0458&key='
     );
   }
 }
