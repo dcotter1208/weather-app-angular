@@ -26,4 +26,6 @@
 .icon {
   width: 125px;
   height: 125px;
+  background-color: rgb(142, 210, 242);
+  border-radius: 50%;
 }

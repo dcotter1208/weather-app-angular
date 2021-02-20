@@ -1,10 +1,9 @@
+import { CurrentWeather } from './current-weather';
 import { DailyForecast } from './daily-forecast';
 
 export class Weather {
   constructor(
-    public temperature: string,
-    public icon: string,
-    public description: string,
+    public current: CurrentWeather,
     public forecast: DailyForecast[]
   ) {}
 }
