@@ -31,5 +31,6 @@ export class ForecastComponent implements OnInit {
 
   handleSuccess(response: Weather): void {
     this.forecast = response.forecast;
+    this.current = response.current;
   }
 }
