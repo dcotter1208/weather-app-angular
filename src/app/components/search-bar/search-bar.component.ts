@@ -1,6 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { CurrentWeather } from 'src/app/classes/current-weather';
-import { DailyForecast } from 'src/app/classes/daily-forecast';
 import { Weather } from 'src/app/classes/weather';
 import { WeatherService } from 'src/app/service/data/weather.service';
 
