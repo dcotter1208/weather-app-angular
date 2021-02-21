@@ -41,6 +41,7 @@
     height: 100%;
     border-right: 2px solid white;
     background: rgba(12, 44, 59, 0.5);
+    padding: 10px;
   }
   .forecast-cell-container {
     display: flex;
