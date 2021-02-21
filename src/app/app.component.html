@@ -1,7 +1,7 @@
 <div class="app">
   <div class="app-container">
-  <app-search-bar></app-search-bar>
+  <app-search-bar (weather)="handleIncomingWeather($event)"></app-search-bar>
   <app-date-time></app-date-time>
-  <app-forecast></app-forecast>
+  <app-forecast [forecast]="weather.forecast" [current]="weather.current"></app-forecast>
 </div>
 </div>

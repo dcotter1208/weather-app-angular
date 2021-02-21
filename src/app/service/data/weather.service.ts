@@ -9,9 +9,9 @@ import { Weather } from 'src/app/classes/weather';
 export class WeatherService {
   constructor(private http: HttpClient) {}
 
-  executeWeatherService(): Observable<Weather> {
+  executeWeatherService(location: string): Observable<Weather> {
     return this.http.get<Weather>(
-      'http://localhost:8080/weather-forecast?lat=42.331&lon=-83.0458&key='
+      `http://localhost:8080/weather-forecast?location=${location}&key=`
     );
   }
 }

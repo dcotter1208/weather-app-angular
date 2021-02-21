@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="search-container">
-<input class="search-bar" type="text" placeholder="Search..">
-<button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+<input class="search-bar" (input)="onUserInput($event)" onin type="text" placeholder="Search..">
+<button class="search-button" (click)="getWeather()" type="submit"><i class="fa fa-search"></i></button>
 </div>
