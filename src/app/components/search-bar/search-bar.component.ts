@@ -19,14 +19,14 @@ export class SearchBarComponent implements OnInit {
     this.getWeather('Detroit');
   }
 
-  onUserInput(event: any) {
+  onUserInput(event: any): void {
     this.inputValue = event.target.value;
   }
 
   getWeather(location?: string): void {
     const searchLocation = location ? location : this.inputValue;
     this.service
-      .executeWeatherService(searchLocation)
+      .executeWeatherService(searchLocation.trim())
       .subscribe((res: Weather) => this.handleSuccess(res));
   }
   handleSuccess(response: Weather): void {
